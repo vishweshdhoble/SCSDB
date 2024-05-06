@@ -3,7 +3,7 @@ import React from "react";
 const Dropdown = ({title,options,handleSetCategoryFilter}) => {
   return (
     <div className="select">
-      <select onChange={(e)=>handleSetCategoryFilter(e.target.value)} defaultValue="0" name="format" id="format">
+      <select onChange={handleSetCategoryFilter} defaultValue="0" name="format" id="format">
         <option value="0" disabled>
           {title}
         </option>

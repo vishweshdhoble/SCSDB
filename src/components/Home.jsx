@@ -5,6 +5,7 @@ import axios from "../utils/axios";
 import Header from "./partials/Header";
 import HorizontalCards from "./partials/HorizontalCards";
 import Dropdown from "./partials/Dropdown";
+import Loading from "./Loading";
 
 const Home = () => {
   document.title = "Flixo | Homepage";
@@ -57,7 +58,7 @@ const Home = () => {
             <Dropdown
               title="Filter"
               options={["tv", "movie", "all"]}
-              handleSetCategoryFilter={handleSetCategoryFilter}
+              handleSetCategoryFilter={(e)=>setCatergory(e.tar)}
             />
           </div>
           <HorizontalCards data={trending} />
@@ -65,7 +66,7 @@ const Home = () => {
       </div>
     </>
   ) : (
-    <h1>Loading...</h1>
+    <Loading />
   );
 };
 

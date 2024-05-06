@@ -41,6 +41,10 @@ select::-ms-expand{
     display: none;
 }
 
+select option{
+    background: #eeededcb;
+}
+
 .select{
     position: relative;
     display: flex;
