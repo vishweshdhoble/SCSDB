@@ -55,7 +55,7 @@ const PersonDetails = () => {
 
           <div className="text-3xl text-white flex gap-x-10">
             <a
-              className="hover:text-[#6556CD] uppercase font-semibold font-['gilroy'] duration-200"
+              className="hover:text-[#6556CD] uppercase font-semibold  duration-200"
               target="_blank"
               href={`https://www.wikidata.org/wiki/${info.externalid.wikidata_id}`}
             >

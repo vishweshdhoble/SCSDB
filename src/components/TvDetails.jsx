@@ -43,21 +43,21 @@ const TvDetails = () => {
           className="text-2xl  hover:text-[#6556CD] duration-200 ri-arrow-left-line"
         ></Link>
         <a
-          className="hover:text-[#6556CD] uppercase font-semibold font-['gilroy'] duration-200"
+          className="hover:text-[#6556CD] uppercase font-semibold  duration-200"
           target="_blank"
           href={info.detail.homepage}
         >
           {/* <i className="ri-external-link-line"></i> */}Web
         </a>
         <a
-          className="hover:text-[#6556CD] uppercase font-semibold font-['gilroy'] duration-200"
+          className="hover:text-[#6556CD] uppercase font-semibold  duration-200"
           target="_blank"
           href={`https://www.wikidata.org/wiki/${info.externalid.wikidata_id}`}
         >
           {/* <i className="ri-earth-fill"></i> */}WIKI
         </a>
         <a
-          className="hover:text-[#6556CD] uppercase font-semibold font-['gilroy'] duration-200"
+          className="hover:text-[#6556CD] uppercase font-semibold  duration-200"
           target="_blank"
           href={`https://www.imdb.com/title/${info.externalid.imdb_id}`}
         >
