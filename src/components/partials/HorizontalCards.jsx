@@ -1,17 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
+import noimage from "/noimage.jpg";
 
 const HorizontalCards = ({ data }) => {
   return (
     <div className="w-[100%] flex overflow-y-hidden">
-      {data.map((d, i) => (
-        <div key={i} className="min-w-[15%] bg-zinc-900 mr-5 mb-5">
+      {data.length>0 ? data.map((d, i) => (
+        <Link to={`/${d.media_type}/details/${d.id}`} key={i} className="min-w-[15%] bg-zinc-900 mr-5 mb-5">
           <img
             className="w-full h-[50%] object-cover"
-            src={`https://image.tmdb.org/t/p/original/${
+            src={
               d.backdrop_path || d.poster_path
-            }`}
+                ? `https://image.tmdb.org/t/p/original/${
+                  d.backdrop_path || d.poster_path
+                  }`
+                : noimage
+            }
           ></img>
 
           <div className="text-white h-[50%] p-3 flex flex-col">
@@ -23,8 +28,8 @@ const HorizontalCards = ({ data }) => {
               <span className="text-zinc-300"> more</span>
             </p>
           </div>
-        </div>
-      ))}
+        </Link>
+      )):<h1 className="text-3xl text-white font-black text-center mt-5">No Recommendations found</h1>}
     </div>
   );
 };

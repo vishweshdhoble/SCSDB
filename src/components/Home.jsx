@@ -58,7 +58,7 @@ const Home = () => {
             <Dropdown
               title="Filter"
               options={["tv", "movie", "all"]}
-              handleSetCategoryFilter={(e)=>setCatergory(e.tar)}
+              handleSetCategoryFilter={(e)=>setCatergory(e.target.value)}
             />
           </div>
           <HorizontalCards data={trending} />
