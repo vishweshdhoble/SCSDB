@@ -34,7 +34,7 @@ const TvDetails = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="relative w-screen h-full px-[5%] overflow-x-hidden"
+      className="relative w-screen pb-16 h-full px-[5%] overflow-x-hidden"
     >
       {/* Part 1 navigation */}
       <nav className="h-[10vh] mt-5 mb-5 items-center w-full text-zinc-100 flex gap-10 text-xl">
@@ -47,14 +47,14 @@ const TvDetails = () => {
           target="_blank"
           href={info.detail.homepage}
         >
-          {/* <i class="ri-external-link-line"></i> */}Web
+          {/* <i className="ri-external-link-line"></i> */}Web
         </a>
         <a
           className="hover:text-[#6556CD] uppercase font-semibold font-['gilroy'] duration-200"
           target="_blank"
-          href={`https:www.wikidata.org/wiki/${info.externalid.wikidata_id}`}
+          href={`https://www.wikidata.org/wiki/${info.externalid.wikidata_id}`}
         >
-          {/* <i class="ri-earth-fill"></i> */}WIKI
+          {/* <i className="ri-earth-fill"></i> */}WIKI
         </a>
         <a
           className="hover:text-[#6556CD] uppercase font-semibold font-['gilroy'] duration-200"
