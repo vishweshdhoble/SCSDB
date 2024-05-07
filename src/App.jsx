@@ -11,8 +11,12 @@ import TvDetails from "./components/TvDetails";
 import PersonDetails from "./components/PersonDetails";
 import Trailer from "./components/partials/Trailer";
 import Notfound from "./components/Notfound";
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 const App = () => {
+const scroll = new LocomotiveScroll();
+
   return (
     <div className="w-full h-screen bg-[#1F1E24] flex">
       <Routes>
